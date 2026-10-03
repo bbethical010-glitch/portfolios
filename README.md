@@ -1,26 +1,55 @@
 # Pratham Pandey portfolio
 
-Static HTML, CSS, and vanilla JavaScript portfolio for GitHub Pages.
+A static, GitHub Pages-ready multi-page portfolio built in plain HTML, CSS, and JavaScript. It uses a broadsheet-inspired visual system, GSAP + ScrollTrigger, Lenis smooth scrolling, an accessible swipeable project selector, and page-specific project themes.
 
 ## Preview locally
 
-From this folder, run any static file server, for example:
-
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 4173
 ```
 
-Then open <http://localhost:8000>.
+Open `http://127.0.0.1:4173/index.html`.
 
-## Customize
+## Project structure
 
-Update the `SITE_CONFIG` object at the top of `js/main.js` with your Instagram and LinkedIn URLs, project URLs, or status changes. Replace `assets/images/photo1-placeholder.svg` and `photo2-placeholder.svg` with optimized photos while keeping the image paths (or update the two `<img>` paths in `index.html`).
+```text
+index.html
+about/index.html
+projects/
+  meme-capsule/index.html
+  easy-storage-cloud/index.html
+  convertix/index.html
+css/
+  tokens.css        # global visual tokens
+  themes.css        # per-project theme overrides
+  pages.css         # page components and responsive layout
+js/
+  config.js         # editable personal/project content and external links
+  shared.js         # shared shell, loader, transition, menu, Lenis
+  home.js           # home project selector and scroll motion
+  project.js        # case-study page renderer and diagram motion
+```
 
-## Deploy on GitHub Pages
+## Customize before publishing
+
+1. Replace `assets/images/photo1-placeholder.svg` and `photo2-placeholder.svg` with optimized portrait images, or update the two paths in `index.html`.
+2. In `js/config.js`, add Instagram and LinkedIn URLs, then confirm the email address and every project link/status.
+3. Add real app screenshots to `assets/` and replace the intentional case-study screen placeholders in `js/project.js`.
+4. Confirm Convertix’s application palette and update the marked `TODO` block in `css/themes.css`.
+
+## GitHub Pages deployment
 
 1. Push this folder to a GitHub repository.
-2. Open **Settings → Pages**.
+2. Open **Settings → Pages** in that repository.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the branch and `/ (root)` folder, then save.
+4. Select your publishing branch and the `/ (root)` folder, then save.
+5. GitHub Pages will publish the site at `https://<username>.github.io/<repository>/`.
 
-All internal asset links are relative, so the site works from a repository subpath such as `https://username.github.io/repository-name/`.
+All internal documents, scripts, stylesheets, and image assets use relative paths, so the site works from a repository subpath. No build step or backend is required.
+
+## Motion and accessibility
+
+- First-visit loader waits for fonts and hero media with a minimum/maximum duration guard.
+- Respects `prefers-reduced-motion`, showing the normal grid and disabling long animations.
+- Keyboard controls work on the swipe selector and menu.
+- External links use `target="_blank" rel="noopener noreferrer"`.
