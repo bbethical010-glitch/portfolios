@@ -11,11 +11,11 @@
   document.body.prepend(header);
   const menu = document.createElement("aside");
   menu.className = "menu-overlay"; menu.id = "site-menu"; menu.setAttribute("aria-hidden", "true");
-  menu.innerHTML = `<div class="menu-overlay__top"><span>Portfolio / 2026</span><button class="menu-close" type="button">Close ×</button></div><nav class="menu-links" aria-label="Site menu"><a data-transition href="${root}index.html#projects">Projects</a><a data-transition href="${root}about/index.html">About</a><a href="mailto:${cfg.person.email}">Contact</a></nav><div class="menu-social">${external("Instagram", cfg.person.instagram)} ${external("LinkedIn", cfg.person.linkedin)}</div>`;
+  menu.innerHTML = `<div class="menu-overlay__top"><span>Portfolio / 2026</span><button class="menu-close" type="button">Close ×</button></div><nav class="menu-links" aria-label="Site menu"><a data-transition href="${root}index.html#projects">Projects</a><a data-transition href="${root}about/index.html">About</a><a href="mailto:${cfg.person.email}">Contact</a></nav><div class="menu-social">${external("GitHub", cfg.person.github)} ${external("LinkedIn", cfg.person.linkedin)} ${external("Instagram", cfg.person.instagram)}</div>`;
   document.body.append(menu);
   const progress = document.createElement("div"); progress.className = "scroll-progress"; document.body.prepend(progress);
   const footer = document.createElement("footer"); footer.className = "footer";
-  footer.innerHTML = `<p class="footer__headline">Open to internship opportunities.</p><div class="footer__right"><a href="mailto:${cfg.person.email}">${cfg.person.email}</a>${external("Instagram", cfg.person.instagram)}${external("LinkedIn", cfg.person.linkedin)}</div><div class="footer__lower"><span>© ${new Date().getFullYear()} ${cfg.person.name}</span><span>Designed as a digital broadsheet</span></div>`;
+  footer.innerHTML = `<p class="footer__headline">Open to internship opportunities.</p><div class="footer__right"><a href="mailto:${cfg.person.email}">${cfg.person.email}</a>${external("GitHub", cfg.person.github)}${external("LinkedIn", cfg.person.linkedin)}${external("Instagram", cfg.person.instagram)}</div><div class="footer__lower"><span>© ${new Date().getFullYear()} ${cfg.person.name}</span><span>Designed as a digital broadsheet</span></div>`;
   document.body.append(footer);
 
   const openMenu = () => { menu.classList.add("is-open"); menu.setAttribute("aria-hidden", "false"); header.querySelector("button").setAttribute("aria-expanded", "true"); if (window.gsap) gsap.to(menu, { clipPath: "inset(0 0 0% 0)", duration: .65, ease: "power4.inOut" }); };

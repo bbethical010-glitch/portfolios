@@ -3,8 +3,9 @@ window.SITE_CONFIG = {
     name: "Pratham Pandey",
     location: "INDIA",
     email: "bbethical010@gmail.com",
-    instagram: null,
-    linkedin: null
+    instagram: "https://www.instagram.com/pratham07.io?stkn=MW5ueG1oOW4wanZvZA%3D%3D&utm_source=qr",
+    github: "https://github.com/bbethical010-glitch",
+    linkedin: "https://www.linkedin.com/in/pratham-pandey-132a77384"
   },
   projects: [
     {
