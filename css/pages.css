@@ -18,7 +18,9 @@
 .card-stage { position: relative; min-height: 475px; perspective: 1000px; }
 .swipe-card { position: absolute; inset: 0 auto auto 0; width: min(100%, 600px); min-height: 430px; padding: 16px; border: 1px solid var(--ink); background: var(--surface); box-shadow: var(--shadow-ink); cursor: grab; user-select: none; }
 .swipe-card:active { cursor: grabbing; }
-.swipe-card[data-index="1"] { transform: translate(16px, 16px) rotate(3deg); } .swipe-card[data-index="2"] { transform: translate(28px, 30px) rotate(6deg); }
+.swipe-card[data-index="0"] { z-index: 3; }
+.swipe-card[data-index="1"] { z-index: 2; transform: translate(16px, 16px) rotate(3deg); }
+.swipe-card[data-index="2"] { z-index: 1; transform: translate(28px, 30px) rotate(6deg); }
 .swipe-card__art { display: grid; place-content: center; height: 250px; padding: 20px; overflow: hidden; border: 1px solid var(--ink); background: var(--ink); color: var(--surface); text-align: center; }
 .swipe-card__art span { font: 800 clamp(55px, 9vw, 108px)/.67 var(--font-display); letter-spacing: -.11em; }
 .swipe-card__art small { margin-top: 17px; color: var(--accent); font: 10px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
