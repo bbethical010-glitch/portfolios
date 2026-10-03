@@ -54,7 +54,7 @@ const SITE_CONFIG = {
     {
       name: "Convertix",
       index: "03",
-      tagline: "Media and document conversion, in one toolkit.",
+      tagline: "A Flutter media and document conversion app for Android and iOS.",
       status: "Active rebuild",
       website: null,
       download: "https://play.google.com/store/apps/details?id=com.allformat.converter&pcampaignid=web_share",

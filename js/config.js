@@ -32,10 +32,10 @@ window.SITE_CONFIG = {
       website: null, download: null, note: "Easy Storage Cloud is a working name and may change before launch.", accent: "#3b82f6"
     },
     {
-      slug: "convertix", index: "03", name: "Convertix", short: "CON / VERT", status: "Active rebuild", released: false,
-      tagline: "Media and document conversion, in one toolkit.",
+      slug: "convertix", index: "03", name: "Convertix", short: "Convertix", status: "Active rebuild", released: false,
+      tagline: "A Flutter media and document conversion app for Android and iOS.",
       overview: "A Flutter media and document conversion app for Android and iOS. Media processing is performed on-device without internet, while document conversion runs through a FastAPI and LibreOffice backend.",
-      role: "App concept & implementation direction", platform: "Android + iOS", timeframe: "v1.0.9 / rebuild", stack: ["Flutter", "Dart", "Riverpod", "FFmpegKit", "Dio", "FastAPI", "LibreOffice", "Hive"],
+      role: "App concept & implementation direction", platform: "ANDROID + iOS", timeframe: "v1.0.9 / rebuild", stack: ["Flutter", "Dart", "Riverpod", "FFmpegKit", "Dio", "FastAPI", "LibreOffice", "Hive"],
       features: ["Image format conversion", "Video-to-audio extraction", "Audio and video conversion", "LOG/HDR video compression", "PDF and document tools", "History and shared output handling"],
       gallery: ["Media tools", "Document tools", "Conversion history"],
       architecture: { nodes: ["Flutter app", "FFmpegKit", "FastAPI", "LibreOffice"], note: "Media tools use on-device FFmpeg processing; document tools send requests to the backend service over TLS." },
