@@ -1,8 +1,199 @@
-body[data-theme="meme-capsule"] { --page: #f3f0e8; --surface: #ddff00; --ink: #121212; --muted: #514f4b; --accent: #ff3e83; --accent-ink: #121212; --theme-dark: #121212; --theme-light: #f3f0e8; }
+/* Meme Capsule: Dark Neo-Brutalist Arcade System (matching Android app & memecapsule.wtf) */
+body[data-theme="meme-capsule"] {
+  --page: #131313;
+  --surface: #1c1b1b;
+  --surface-high: #2a2a2a;
+  --ink: #e5e2e1;
+  --muted: #988ca1;
+  --accent: #9b30ff;
+  --accent-light: #dcb8ff;
+  --gold: #f4c300;
+  --gold-light: #ffe399;
+  --pink: #dd0061;
+  --accent-ink: #ffffff;
+  --line: rgba(155, 48, 255, 0.3);
+  --shadow-ink: 5px 5px 0px #f4c300;
+  --theme-dark: #131313;
+  --theme-light: #e5e2e1;
+}
+
+body[data-theme="meme-capsule"] .shell-header {
+  background: rgba(19, 19, 19, 0.95);
+  border-bottom: 2px solid #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .display-banner {
+  background: #1c1b1b;
+  color: #f4c300;
+  border-top: 2px solid #9b30ff;
+  border-bottom: 2px solid #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .ticker {
+  background: #131313;
+  color: #dcb8ff;
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .button {
+  background: #f4c300;
+  color: #121212;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 0px #9b30ff;
+  font-weight: 700;
+}
+
+body[data-theme="meme-capsule"] .button:hover {
+  background: #9b30ff;
+  color: #ffffff;
+  border-color: #f4c300;
+  box-shadow: 6px 6px 0px #f4c300;
+  transform: translate(-2px, -2px);
+}
+
+body[data-theme="meme-capsule"] .status-badge {
+  background: #1c1b1b;
+  border: 1px solid #9b30ff;
+  color: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .status-badge::before {
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+}
+
+body[data-theme="meme-capsule"] .bio-aside {
+  background: #1c1b1b;
+  border: 2px solid #9b30ff;
+  box-shadow: 4px 4px 0px #f4c300;
+  color: #e5e2e1;
+}
+
+body[data-theme="meme-capsule"] .screen {
+  background: #1c1b1b;
+  border: 2px solid #9b30ff;
+  box-shadow: 6px 6px 0px #f4c300;
+}
+
+body[data-theme="meme-capsule"] .screen__label {
+  color: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .stack span {
+  background: #1c1b1b;
+  border: 1px solid #9b30ff;
+  color: #dcb8ff;
+}
+
+body[data-theme="meme-capsule"] .facts {
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .fact {
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .fact:first-child {
+  border-left-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .case-feature-list {
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .case-feature-list li {
+  border-color: rgba(155, 48, 255, 0.25);
+}
+
+body[data-theme="meme-capsule"] .case-feature-list span {
+  color: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .arch-console {
+  background: #131313;
+  border: 2px solid #9b30ff;
+  box-shadow: 8px 8px 0px #f4c300;
+}
+
+body[data-theme="meme-capsule"] .arch-spec-pill {
+  color: #f4c300;
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .arch-sim-btn {
+  background: #f4c300;
+  color: #121212;
+  border-color: #000;
+  box-shadow: 3px 3px 0px #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .arch-sim-btn:hover {
+  background: #9b30ff;
+  color: #fff;
+  border-color: #f4c300;
+  box-shadow: 0 0 16px #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .arch-canvas-wrap,
+body[data-theme="meme-capsule"] .arch-hud,
+body[data-theme="meme-capsule"] .arch-pipeline-step,
+body[data-theme="meme-capsule"] .arch-highlight-card {
+  background: #1c1b1b;
+  border-color: rgba(155, 48, 255, 0.35);
+}
+
+body[data-theme="meme-capsule"] .arch-pipeline-step:hover {
+  border-color: #f4c300;
+  box-shadow: 4px 4px 0px #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .arch-pipeline-step b {
+  color: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .arch-highlight-card span {
+  color: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .arch-wire-pulse {
+  stroke: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .arch-node-box {
+  fill: #1c1b1b;
+  stroke: rgba(155, 48, 255, 0.4);
+}
+
+body[data-theme="meme-capsule"] .arch-node-group:hover .arch-node-box {
+  stroke: #f4c300;
+  fill: #2a2a2a;
+}
+
+body[data-theme="meme-capsule"] .arch-node-group.is-selected .arch-node-box {
+  stroke: #9b30ff;
+  fill: #241a30;
+  filter: drop-shadow(0 0 10px #9b30ff);
+}
+
+body[data-theme="meme-capsule"] .arch-node-tag {
+  fill: #f4c300;
+}
+
+body[data-theme="meme-capsule"] .footer {
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .next-project {
+  border-color: #9b30ff;
+}
+
+body[data-theme="meme-capsule"] .next-project:hover {
+  color: #f4c300;
+}
+
 body[data-theme="easy-storage-cloud"] { --page: #060a14; --surface: #111827; --ink: #e5f2ff; --muted: #94a3b8; --accent: #3b82f6; --accent-ink: #06101f; --theme-dark: #060a14; --theme-light: #e5f2ff; --line: #1e293b; }
 /* TODO: confirm with Convertix app UI. Palette not described in supplied documentation. */
 body[data-theme="convertix"] { --page: #eee9f8; --surface: #d9cff4; --ink: #1e1535; --muted: #655e74; --accent: #6d3ee8; --accent-ink: #fbf8ff; --theme-dark: #1e1535; --theme-light: #fbf8ff; }
 body[data-theme="easy-storage-cloud"] .shell-header { background: #060a14; }
 body[data-theme="easy-storage-cloud"] .display-banner { color: #060a14; background: #3b82f6; }
-body[data-theme="meme-capsule"] .display-banner { color: #121212; background: #ddff00; }
 body[data-theme="convertix"] .display-banner { color: #fbf8ff; background: #6d3ee8; }

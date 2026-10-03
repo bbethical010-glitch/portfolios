@@ -81,7 +81,7 @@ window.SITE_CONFIG = {
       website: "https://memecapsule.wtf/",
       download: "https://play.google.com/store/apps/details?id=com.meme.capsule&referrer=utm_source%3Dwebsite%26utm_medium%3Dhero_badge",
       instagram: "https://www.instagram.com/capsule.meme?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
-      accent: "#ff3e83"
+      accent: "#9b30ff"
     },
     {
       slug: "easy-storage-cloud", index: "02", name: "Easy Storage Cloud", short: "YOUR / CLOUD", status: "In development", released: false,
