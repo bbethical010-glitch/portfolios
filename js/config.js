@@ -14,7 +14,13 @@ window.SITE_CONFIG = {
       overview: "A mobile-first meme delivery product built around a single-action capsule rather than an infinite feed. The product pairs a public web platform and Android app with serverless edge delivery and a curation system.",
       role: "Original ideator & lead frontend", platform: "Android + Web", timeframe: "v2.7 / 2026", stack: ["React", "TypeScript", "Vite", "Capacitor", "Cloudflare Pages", "D1", "R2"],
       features: ["Single-tap meme capsule flow", "Card deck with gesture interaction", "Meme Vault and Mood Boards", "Native MediaStore saving and sharing", "Edge delivery with Cloudflare D1 and R2", "Curation, safety, and reporting systems"],
-      gallery: ["One tap / one meme", "Vault / mood boards", "Share / save"],
+      gallery: [
+        { label: "Splash & App Entry", image: "assets/images/meme-capsule/loading-screen.jpg" },
+        { label: "Capsule Dispenser", image: "assets/images/meme-capsule/home-screen.jpg" },
+        { label: "Active Meme Card", image: "assets/images/meme-capsule/meme-loaded.jpg" },
+        { label: "Meme Vault", image: "assets/images/meme-capsule/vault.jpg" },
+        { label: "Mood Boards", image: "assets/images/meme-capsule/moodboards.jpg" }
+      ],
       architecture: { nodes: ["Android app", "Cloudflare Pages", "D1 + R2", "Curation API"], note: "Public mobile and web surfaces are decoupled from edge data, media storage, and curation systems." },
       website: "https://memecapsule.wtf/",
       download: "https://play.google.com/store/apps/details?id=com.meme.capsule&referrer=utm_source%3Dwebsite%26utm_medium%3Dhero_badge",
