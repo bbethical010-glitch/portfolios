@@ -2,7 +2,7 @@ window.SITE_CONFIG = {
   person: {
     name: "Pratham Pandey",
     location: "INDIA",
-    email: "bbethical010@gmail.com",
+    email: "pratham07work@gmail.com",
     instagram: "https://www.instagram.com/pratham07.io?stkn=MW5ueG1oOW4wanZvZA%3D%3D&utm_source=qr",
     github: "https://github.com/bbethical010-glitch",
     linkedin: "https://www.linkedin.com/in/pratham-pandey-132a77384"
@@ -16,7 +16,10 @@ window.SITE_CONFIG = {
       features: ["Single-tap meme capsule flow", "Card deck with gesture interaction", "Meme Vault and Mood Boards", "Native MediaStore saving and sharing", "Edge delivery with Cloudflare D1 and R2", "Curation, safety, and reporting systems"],
       gallery: ["One tap / one meme", "Vault / mood boards", "Share / save"],
       architecture: { nodes: ["Android app", "Cloudflare Pages", "D1 + R2", "Curation API"], note: "Public mobile and web surfaces are decoupled from edge data, media storage, and curation systems." },
-      website: "https://memecapsule.wtf", download: "https://play.google.com/store/apps/details?id=com.meme.capsule", accent: "#ff3e83"
+      website: "https://memecapsule.wtf/",
+      download: "https://play.google.com/store/apps/details?id=com.meme.capsule&referrer=utm_source%3Dwebsite%26utm_medium%3Dhero_badge",
+      instagram: "https://www.instagram.com/capsule.meme?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
+      accent: "#ff3e83"
     },
     {
       slug: "easy-storage-cloud", index: "02", name: "Easy Storage Cloud", short: "YOUR / CLOUD", status: "In development", released: false,
@@ -36,7 +39,11 @@ window.SITE_CONFIG = {
       features: ["Image format conversion", "Video-to-audio extraction", "Audio and video conversion", "LOG/HDR video compression", "PDF and document tools", "History and shared output handling"],
       gallery: ["Media tools", "Document tools", "Conversion history"],
       architecture: { nodes: ["Flutter app", "FFmpegKit", "FastAPI", "LibreOffice"], note: "Media tools use on-device FFmpeg processing; document tools send requests to the backend service over TLS." },
-      website: null, download: null, note: "Current documentation identifies Play Store signing and Android API 36 requirements as blockers before the next release.", accent: "#6d3ee8"
+      website: null,
+      download: "https://play.google.com/store/apps/details?id=com.allformat.converter&pcampaignid=web_share",
+      instagram: null,
+      note: "Current documentation identifies Play Store signing and Android API 36 requirements as blockers before the next release.",
+      accent: "#6d3ee8"
     }
   ]
 };
