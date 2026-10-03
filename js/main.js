@@ -2,7 +2,7 @@
 const SITE_CONFIG = {
   person: {
     name: "Pratham Pandey",
-    email: "bbethical010@gmail.com",
+    email: "pratham07work@gmail.com",
     instagram: "https://www.instagram.com/pratham07.io?stkn=MW5ueG1oOW4wanZvZA%3D%3D&utm_source=qr",
     github: "https://github.com/bbethical010-glitch",
     linkedin: "https://www.linkedin.com/in/pratham-pandey-132a77384",
@@ -13,8 +13,9 @@ const SITE_CONFIG = {
       index: "01",
       tagline: "One tap. One meme. Zero fluff.",
       status: "Released / active",
-      website: "https://memecapsule.wtf",
-      download: "https://play.google.com/store/apps/details?id=com.meme.capsule",
+      website: "https://memecapsule.wtf/",
+      download: "https://play.google.com/store/apps/details?id=com.meme.capsule&referrer=utm_source%3Dwebsite%26utm_medium%3Dhero_badge",
+      instagram: "https://www.instagram.com/capsule.meme?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
       overview: "An anti-algorithm meme delivery platform that replaces infinite feeds with a single-action capsule: curated, surprising entertainment without accounts, tracking, or social clutter.",
       features: [
         "Single-tap capsule dispenser with no feed or scroll",
@@ -56,7 +57,7 @@ const SITE_CONFIG = {
       tagline: "Media and document conversion, in one toolkit.",
       status: "Active rebuild",
       website: null,
-      download: null,
+      download: "https://play.google.com/store/apps/details?id=com.allformat.converter&pcampaignid=web_share",
       overview: "A Flutter media and document conversion app for Android and iOS. Media tools run on-device without internet; document tools use a FastAPI and LibreOffice backend.",
       features: [
         "Image, audio, video conversion and video-to-audio extraction",
@@ -108,6 +109,7 @@ function renderProjects() {
         <div class="project-actions">
           ${linkMarkup("Visit website", project.website)}
           ${project.name === "Easy Storage Cloud" ? `<span class="button button-disabled" aria-disabled="true">Coming soon</span>` : linkMarkup("Download app", project.download)}
+          ${project.instagram ? linkMarkup("Project Instagram", project.instagram) : ""}
         </div>
       </div>
       <div class="architecture">
